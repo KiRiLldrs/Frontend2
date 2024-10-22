@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Таблица</title>
+        <link rel="stylesheet" href="table.css">
+        <script src="table.js"></script>
+    </head>
+
+    <body>
+    
+        <table id="table">
+            <caption>Таблица студентов</caption>
+            <thead>
+                <tr class="trhead">
+                    <th>ID</th>
+                    <th>ФИО студента</th>
+                    <th>Номер зачетной книжки</th>
+                    <th>Номер группы</th>
+                    <th>Пол</th>
+                    <th>Возраст</th>
+                    <th>Форма поступления</th>
+                    <th>Направление</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr1">
+                    <th>1</th>
+                    <th>Иванов Иван Иванович</th>
+                    <th>143245</th>
+                    <th>101</th>
+                    <th>М</th>
+                    <th>20</th>
+                    <th>Бюджет</th>
+                    <th>Радиотехника</th>
+                </tr>
+                <tr class="tr2">
+                    <th>2</th>
+                    <th>Петрова Анна Сергеевна</th>
+                    <th>534512</th>
+                    <th>401</th>
+                    <th>Ж</th>
+                    <th>24</th>
+                    <th>Контракт</th>
+                    <th>Прикладная математика и информатика</th>
+                </tr>
+                <tr class="tr1">
+                    <th>3</th>
+                    <th>Сидоров Алексей Петрович</th>
+                    <th>146872</th>
+                    <th>105</th>
+                    <th>М</th>
+                    <th>19</th>
+                    <th>Бюджет</th>
+                    <th>Радиотехника</th>
+                </tr>
+                <tr class="tr2">
+                    <th>4</th>
+                    <th>Кузнецова Ольга Александровна</th>
+                    <th>360986</th>
+                    <th>201</th>
+                    <th>Ж</th>
+                    <th>21</th>
+                    <th>Бюджет</th>
+                    <th>Прикладная механика</th>
+                </tr>
+                <tr class="tr1">
+                    <th>5</th>
+                    <th>Николаев Дмитрий Викторович</th>
+                    <th>759324</th>
+                    <th>302</th>
+                    <th>М</th>
+                    <th>23</th>
+                    <th>Контракт</th>
+                    <th>Металлургия</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form">
+        <form id="addStudentForm">
+            <div class="form-input">
+                <label for="fio">ФИО студента:  </label>
+                <input type="text" id="fio" name="fio">
+            </div>
+            <div class="form-input">
+                <label for="book_number">Номер зачетной книжки:  </label>
+                <input type="text" id="book_number" name="book_number">
+            </div>
+            <div class="form-input">
+                <label for="group_number">Номер группы:  </label>
+                <input type="text" id="group_number" name="group_number">
+            </div>
+            <div class="form-input">
+                <label for="sex">Пол:  </label>
+                <select id="sex" name="sex" required>
+                    <option value="None">---</option>
+                    <option value="М">Мужской</option>
+                    <option value="Ж">Женский</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <label for="age">Возраст:  </label>
+                <input type="text" id="age" name="age">
+            </div>
+            <div class="form-input">
+                <label for="ed_form">Форма поступления:  </label>
+                <select id="ed_form" name="ed_form" required>
+                    <option value="None">---</option>
+                    <option value="Бюджет">Бюджет</option>
+                    <option value="Контракт">Контракт</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <label for="direction">Направление:  </label>
+                <select id="direction" name="direction" required>
+                    <option value="None">---</option>
+                    <option value="Механика и математическое моделирование">Механика и математическое моделирование</option>
+                    <option value="Машиностроение">Машиностроение</option>
+                    <option value="Прикладная механика">Прикладная механика</option>
+                    <option value="Металлургия">Металлургия</option>
+                    <option value="Авиастроение">Авиастроение</option>
+                    <option value="Прикладная математика и информатика">Прикладная математика и информатика</option>
+                    <option value="Прикладные математика и физика">Прикладные математика и физика</option>
+                    <option value="Информационная безопасность автоматизированных систем">Информационная безопасность автоматизированных систем</option>
+                    <option value="Радиотехника">Радиотехника</option>
+                </select>
+            </div>
+        </form>
+        </div>
+
+        <div class="for_button">
+            <button class="button" type="button" onclick="addStudent()">Добавить</button>
+        </div>
+
+
+        <div class="header">
+            <a href="laba1.html">Основная страница</a>
+            <a href="page2.html">Позиционирование элементов</a>
+            <a href="table.html">Таблица</a>
+        </div>
+
+    </body>
+
+
+</html>

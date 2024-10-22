@@ -1,0 +1,115 @@
+.header{
+    background-color: aliceblue;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 120px;
+    margin-top: 20px;
+}
+
+.header a{
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+    font-size: 16px
+}
+
+.header a:hover{
+    color:black;
+    font-weight: bold;
+
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+table, th, td{
+    border: 1px solid black
+}
+
+th, td{
+    font-size: 20px;
+    padding: 10px;
+}
+
+caption{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;;
+}
+
+body{
+    background-color:#bfdddd;
+}
+
+.trhead{
+    background-color: aliceblue;
+    font-weight: bold;
+}
+
+.tr1{
+    background-color: #FFCCFF;
+}
+
+.tr2{
+    background-color: #FFCCCC;
+}
+
+input{
+    height: 20px;
+    padding: 5px;
+    background-color: rgba(240, 240, 240, 0.4); 
+    transition: background-color 0.3s ease;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+input:hover{
+    background-color: rgb(240, 240, 240); 
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 500px;
+    margin-right: 500px;
+    background-color:#a3e2e2;
+}
+
+.form-input{
+    margin:20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-input select{
+    border: 0px;
+    background-color: rgb(240, 240, 240, 0.4);
+    height:40px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.for_button{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    font-size: 16px;
+    padding: 7px;
+}
+
+.row{
+    text-align: center;
+    font-weight: bold;
+}
