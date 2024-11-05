@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <title>Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="container justify-content-center">
+            <a class="nav-item nav-link mr-3" href="info.html">Информация  </a>
+            <a class="nav-item nav-link mr-3" href="films.html">Фильмы</a>
+        </nav>
+    </nav>
+
+<div class="smthg">
+    <nav id="navbar-example" class="col-md-3 d-none d-md-block bg-light sidebar" style="width:300px;">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="#actorCarousel" style="color: black;">Карусель</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#cards" style="color: black;">Карточки с фильмами</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#biography" style="color: black;">Краткая биография</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="actorCarousel" class="carousel slide" data-bs-ride="carousel" style="margin-left: 0px; width: 1700px;">
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img src="images/Br1.jpg" class="d-block w-100" alt="Фото 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Br2.png" class="d-block w-100" alt="Фото 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Br3.jfif" class="d-block w-100" alt="Фото 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Br4.jpeg" class="d-block w-100" alt="Фото 4">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Br5.jpg" class="d-block w-100" alt="Фото 5">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#actorCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#actorCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+    
+</div>
+
+<div class="d-flex" style="padding: 50px;" id="cards">
+    <div class="card m-5" style="width:200px;">
+        <img class="card-img-top" src="images/pianist.jpg" alt="The Pianist">
+        <div class="card-body">
+            <h5 class="card-title">The Pianist</h5>
+            <p class="card-text">Ужасы Холокоста глазами музыканта. Выдающаяся роль Эдриана Броуди и «Золотая пальмовая ветвь» в Каннах.</p>
+            <a href="https://www.kinopoisk.ru/film/355/" class="btn btn-primary">Больше</a>
+        </div>
+    </div>
+    
+    <div class="card m-5" style="width:200px;">
+        <img class="card-img-top" src="images/Detachment.jpg" alt="Detachment">
+        <div class="card-body">
+            <h5 class="card-title">Detachment</h5>
+            <p class="card-text">Генри Барт — учитель на замену, который получает очередное временное назначение.</p>
+            <a href="https://www.kinopoisk.ru/film/535337/" class="btn btn-primary">Больше</a>
+        </div>
+    </div>
+
+    <div class="card m-5" style="width:200px;">
+        <img class="card-img-top" src="images/jacket.jpg" alt="Detachment">
+        <div class="card-body">
+            <h5 class="card-title">The Jacket</h5>
+            <p class="card-text">В ходе карательной терапии Джек получает возможность перемещаться в будущее. Сай-фай триллер с Эдрианом Броуди</p>
+            <a href="https://www.kinopoisk.ru/film/47382/" class="btn btn-primary">Больше</a>
+        </div>
+    </div>
+
+    <div class="card m-5" style="width:200px;">
+        <img class="card-img-top" src="images/backtrack.jpg" alt="Detachment">
+        <div class="card-body">
+            <h5 class="card-title">Backtrack</h5>
+            <p class="card-text">Психоаналитик общается с призраками и мучается тайнами прошлого. Жуткий триллер для фанатов «Шестого чувства»</p>
+            <a href="https://www.kinopoisk.ru/film/746481/" class="btn btn-primary">Больше</a>
+        </div>
+    </div>
+
+    <div class="card m-5" style="width:200px;">
+        <img class="card-img-top" src="images/village.jpg" alt="Detachment">
+        <div class="card-body">
+            <h5 class="card-title">The Village</h5>
+            <p class="card-text">Слепая девушка против монстров. Дивной красоты триллер-антиутопия, в котором обман подстерегает на каждом шагу.</p>
+            <a href="https://www.kinopoisk.ru/film/47018/" class="btn btn-primary">Больше</a>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5" style="margin: 50px;" id="biography">
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Краткая Биография Эдриана Броуди
+        </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <h1 style="text-align: center;">Adrien Nicholas Brody</h1>
+            <p style="text-indent: 60px; font-size: 20px;">Brody was born in Jackson Heights, Queens, New York City, the son of Sylvia Plachy, a photographer, and Elliot Brody, a retired history professor and painter. Brody's father is of Polish Jewish descent; Brody's mother, who was raised Catholic, was born in Budapest, Hungary, and is the daughter of a Catholic Hungarian aristocrat father and a Czech Jewish mother, although Brody says he was raised "without a strong connection" to either Judaism or Christianity.</p>
+            <p style="text-indent: 60px; font-size: 20px;">As a child, Brody performed magic shows at children's birthday parties as "The Amazing Adrien". He attended I.S. 145 Joseph Pulitzer Middle School and New York's Fiorello H. LaGuardia High School of Music & Art and Performing Arts. His parents enrolled him in acting classes to distance him from the dangerous children with whom he associated. He attended summer camp at Long Lake Camp for the Arts in the Adirondacks in upstate New York. Brody attended Stony Brook University before transferring to Queens College for a semester.</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

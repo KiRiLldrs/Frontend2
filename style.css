@@ -1,0 +1,23 @@
+.nav-link{
+    margin:10px;
+}
+
+.nav-link:hover{
+    margin:10px;
+    font-weight: bold;
+}
+
+.smthg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.center-alert{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
