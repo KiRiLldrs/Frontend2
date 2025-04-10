@@ -1,0 +1,18 @@
+{
+    "universities": [
+        {
+            "name": "Samara University",
+            "year": 1942
+        },
+        {
+            "name": "Samara Polytech",
+            "year":	1914
+        },
+        {
+            "name": "Samara State Medical University",
+            "year": 1930
+        }
+
+
+    ]
+}
