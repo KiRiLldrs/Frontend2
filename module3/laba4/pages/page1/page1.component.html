@@ -1,0 +1,24 @@
+<div>
+    <div>
+        <label>Имя</label>
+        <input name="name" [(ngModel)]="name" (ngModelChange) = "onNameChange()" />
+    </div>
+    <div>
+        <label>Фамилия</label>
+        <input name="surname" [(ngModel)]="surname"/>
+    </div>
+    <div>
+        <label>Возраст</label>
+        <input type="number" name="age" [(ngModel)]="age"/>
+    </div>
+    <div>
+        <button (click)="addUser()">Добавить</button>
+    </div>
+</div>
+
+<div>
+    <h3>Пользователи</h3>
+    <ul>
+        <li *ngFor="let user of users">{{user.name}} {{user.surname}} {{user.age}}</li>
+    </ul>
+</div>
