@@ -1,0 +1,25 @@
+<form [FormGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label>Имя</label>
+        <input name="userName" formComtrolName="userName" />
+    </div>
+    <div *ngif="myForm.controls['userName'].invalid && myForm.controls['userName'].touched">
+        Не указано имя!
+    </div>
+
+    <div>
+        <label>Фамилия</label>
+        <input name="userSurname" formComtrolName="userSurname" />
+    </div>
+    <div *ngif="myForm.controls['userSurname'].invalid && myForm.controls['userSurname'].touched">
+        Не указана фамилия!
+    </div>
+    <button type="submit" disabled="myForm.invalid">Отправить</button>
+</form>
+
+<div>
+    <h3>Пользователи</h3>
+    <ul>
+        <li *ngFor="let user of users">{{user.userSurname}} {{user.userName}}</li>
+    </ul>
+</div>
